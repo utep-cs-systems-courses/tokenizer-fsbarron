@@ -141,6 +141,15 @@ int is_valid_character(char c) {
     return 0;//returns 0 if it's not valid
   }
 }
+//here we print tokens
+void print_tokens(char **tokens){
+  int i = 0;
+  while(**tokens != ' ') {
+    printf("t[%d] = %s\n", i, *tokens);
+    tokens++;
+    i++;
+  }
+}
 
 
  
